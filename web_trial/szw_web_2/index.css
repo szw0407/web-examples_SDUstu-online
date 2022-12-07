@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#html_head{
+	background-color: blue;
+	width: 100%;
+
+	z-index: 1000;
+}
+
+#over, #tabs{
+	display: flex;
+	width: 100%;	
+}
+
+.tab{
+	margin-left: 3%;
+	color: white;
+}
+
+#r_menu{
+	position: absolute;
+	right: 5px;
+}
+
+#contents{
+	display: grid;
+	background-color: #fafafa;
+	grid-template-columns: 10fr 50fr 15fr;
+}
+
+#l_column{
+	z-index: 1;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	top: 5px;
+	position: sticky;
+	height: 900px
+}
+
+#r_column{
+	z-index: 1;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	top: 80px;
+	right: 0px;
+
+}
+#r_clm_content{
+	top: 5px;
+	position: sticky;
+	height: 900px
+}
+#main_middle{
+	background-color: blanchedalmond;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	height: 100000px;
+
+}
+#picplace{
+	z-index: 5;
+	width: 240;
+	height: 180;
+	position:relative;
+
+}
+
+#my_info{
+	z-index: 5;
+	position: absolute;
+	display: flex;
+	left: 10px;
+	right:10px;
+	top: 80%;
+	opacity:0.8;
+	background-color: white;
+}
+.ctt{
+	font-size: larger;
+}
+
+#arr{
+	border-radius:100%;
+	position:fixed;
+	left:8%;
+	z-index: 1000000;
+	top:90%
+}
+
+.menu_icon{
+	height: 50px;
+	width: 50px;
+}
+
+.menu_icon:active{
+	background-color: gray;
+	border-radius: 100%;
+
+}
+
+.menu_icon:hover{
+	background-color: gray;
+}
+
+#cd{
+	position:absolute;
+	right: 1px;
+	bottom: 1px;
+	position: fixed;
+}
